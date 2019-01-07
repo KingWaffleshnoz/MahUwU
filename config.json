@@ -1,0 +1,6 @@
+{
+	"token": "token",
+	"prefix": "m!",
+	"owner": "id",
+	"opts": {"mentionEveryone": false, "fetchAllMembers": true, "sync": true}
+}
