@@ -6,17 +6,69 @@ const readdir = require("fs").readdir;
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
 
-readdir('./modules/', (err, files) => {
+readdir('./fun/', (err, files) => {
 	bot.log(`Loading ${files.length} modules!`);
 	files.forEach(f => {
 		try {
-			var name = require(`./modules/${f}`).name
-			bot.commands.set(name, require(`./modules/${f}`));
+			var name = require(`./fun/${f}`).name
+			bot.commands.set(name, require(`./fun/${f}`));
 		} catch (e) {
 			bot.log(`Unable to load command ${f}: ${e}`);
 		}
 	});
-	bot.log(`Modules loaded!`);
+	bot.log(`Fun modules loaded!`);
+});
+
+readdir('./info/', (err, files) => {
+	bot.log(`Loading ${files.length} modules!`);
+	files.forEach(f => {
+		try {
+			var name = require(`./info/${f}`).name
+			bot.commands.set(name, require(`./info/${f}`));
+		} catch (e) {
+			bot.log(`Unable to load command ${f}: ${e}`);
+		}
+	});
+	bot.log(`Info modules loaded!`);
+});
+
+readdir('./misc modules/', (err, files) => {
+	bot.log(`Loading ${files.length} modules!`);
+	files.forEach(f => {
+		try {
+			var name = require(`./misc modules/${f}`).name
+			bot.commands.set(name, require(`./misc modules/${f}`));
+		} catch (e) {
+			bot.log(`Unable to load command ${f}: ${e}`);
+		}
+	});
+	bot.log(`Miscallaneous modules loaded!`);
+});
+
+readdir('./moderation/', (err, files) => {
+	bot.log(`Loading ${files.length} modules!`);
+	files.forEach(f => {
+		try {
+			var name = require(`./moderation/${f}`).name
+			bot.commands.set(name, require(`./moderation/${f}`));
+		} catch (e) {
+			bot.log(`Unable to load command ${f}: ${e}`);
+		}
+	});
+	bot.log(`Moderation modules loaded!`);
+});
+
+readdir('./score/', (err, files) => {
+	bot.log(`Loading ${files.length} modules!`);
+	files.forEach(f => {
+		try {
+			var name = require(`./score/${f}`).name
+			bot.commands.set(name, require(`./score/${f}`));
+		} catch (e) {
+			bot.log(`Unable to load command ${f}: ${e}`);
+		}
+	});
+	bot.log(`Scoring odules loaded!`);
 });
 
 readdir('./events/', (err, files) => {

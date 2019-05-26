@@ -7,7 +7,7 @@ module.exports = {
         { color: 3447003,
           footer: {
             icon_url: msg.guild.iconURL,
-            text: "Version: 1.3.1"
+            text: "© Jared Lyon 2019"
           },
           author: {
             name: "Bot Information",
@@ -20,11 +20,11 @@ module.exports = {
               value: "MahUwU is a general utility bot made by Jared Lyon (Jared ζ #0254) that primarily uses text triggers to perform rudimentary tasks.\nYou can join his server here: https://discord.gg/q2fCsNr"
             },
             {
-              name: "Last Update:",
-              value: "**1.3.1**\n-Added JSON based points system\n-Added score leaderboard\n-Fixed all embed footer\n-Published the first commit to GitHub"
+              name: "Last Update: v1.3.3",
+              value: "-Updated info embed\n-Split main library into constituent folders"
             },
             {
-              name: "GitHub:",
+              name: "GitHub: v1.3.3",
               value: "https://github.com/KingWaffleshnoz/MahUwU\nNote that this page is still a WIP."
             }
           ]
