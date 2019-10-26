@@ -11,7 +11,7 @@ exports.run = (bot, msg) => {
 
 	bot.processMessage(msg);
 
-//reply array shenanigans
+	//reply array shenanigans
 	const responseObject = {
 		
 	};
@@ -20,6 +20,7 @@ exports.run = (bot, msg) => {
 	}
 
 	const msg1 = msg.content.toLowerCase();
+	//includes
 	if (msg1.includes("uwu")) {
 		msg.channel.send("uwu")
 	}
@@ -33,6 +34,16 @@ exports.run = (bot, msg) => {
 		msg.channel.send("(;•́︿•̀ ;) Hewwo??")
 	}
 	
+	//palindrome
+	if (msg1.length() == 3) {
+		let s1 = msg1.substring(0, 1);
+		let s2 = msg1.substring(2, 1);
+
+		if (s1 == s2) {
+			msg.channel.send(msg1);
+		}
+	}
+
 	//score writes
 	if (!bot.score[msg.author.id] && msg.channel.id != '479903283390185477') {
 		var roll = Math.floor((Math.random() * 20));

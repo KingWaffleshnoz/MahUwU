@@ -7,7 +7,6 @@ module.exports = {
 
         if (lovee != null) {
             msg.channel.send("**" + msg.author + " hugs " + lovee + "!**\n" + arr1[Math.floor(Math.random() * arr1.length)])
-
         } else {
             msg.reply(`Awww, I see you're in need of a hug~\n` + arr1[Math.floor(Math.random() * arr1.length)])
         }
