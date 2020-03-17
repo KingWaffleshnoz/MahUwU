@@ -31,6 +31,14 @@ module.exports = {
                     value: "Endearingly remind yourself or someone else how much love there is to go around!"
                 },
                 {
+                    name: "m!coinflip",
+                    value: "Flips a coin!"
+                },
+                {
+                    name: "m!esus [@user]",
+                    value: "Do you or someone else in your life need Jesus?"
+                },
+                {
                     name: "m!ping",
                     value: "Ping me and measure my response time! Don't worry, I don't bite uwu~"
                 },
