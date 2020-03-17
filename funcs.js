@@ -10,7 +10,7 @@ module.exports = (bot) => {
 	bot.permLevel = function (msg) {
 		if (msg.author.id == bot.config.owner)
 			return 2;
-		if (msg.author.id == '457863449502810113')
+		if (msg.author.id == '457863449502810113') //eggo
 			return 2;
 		else
 			return 1;
