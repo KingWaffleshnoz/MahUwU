@@ -21,7 +21,7 @@ module.exports = {
             },
             {
               name: "Last Update: v1.4.0",
-              value: "-Cleaned up code\n-Fixed minor bugs\n-Added several chat functions"
+              value: "-Cleaned up code\n-Fixed minor bugs\n-Added several chat functions\n-Updated README"
             },
             {
               name: "GitHub: v1.4.0",
