@@ -24,6 +24,15 @@ exports.run = (bot, msg) => {
 	if (msg1.includes("uwu")) {
 		msg.channel.send("uwu")
 	}
+	if (msg1.includes("owo")) {
+		msg.channel.send("owo")
+	}
+	if (msg1.includes(";w;")) {
+		msg.channel.send(";w;")
+	}
+	if (msg1.includes("ewe")) {
+		msg.channel.send("ewe")
+	}
 	if (msg1.includes("ayuh")) {
 		msg.channel.send("aYUH!!!")
 	}
@@ -32,16 +41,6 @@ exports.run = (bot, msg) => {
 	}
 	if (msg1.includes("hewwo")) {
 		msg.channel.send("(;•́︿•̀ ;) Hewwo??")
-	}
-	
-	//palindrome
-	if (msg1.length() == 3) {
-		let s1 = msg1.substring(0, 1);
-		let s2 = msg1.substring(2, 1);
-
-		if (s1 == s2) {
-			msg.channel.send(msg1);
-		}
 	}
 
 	//score writes

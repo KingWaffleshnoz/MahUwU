@@ -17,14 +17,14 @@ module.exports = {
           fields: [
             {
               name: "General:",
-              value: "MahUwU is a general utility bot made by Jared Lyon (jareb #0813) that primarily uses text triggers to perform rudimentary tasks.\nYou can join his server here: https://discord.gg/q2fCsNr"
+              value: "MahUwU is a general utility bot made by Jared Lyon (jareb #1338) that primarily uses text triggers to perform rudimentary tasks.\nYou can join his server here: https://discord.gg/q2fCsNr"
             },
             {
-              name: "Last Update: v1.3.4",
-              value: "-Added ban command\n-Fixed permissions issue"
+              name: "Last Update: v1.4.0",
+              value: "-Cleaned up code\n-Fixed minor bugs\n-Added several chat functions"
             },
             {
-              name: "GitHub: v1.3.4",
+              name: "GitHub: v1.4.0",
               value: "https://github.com/KingWaffleshnoz/MahUwU\nNote that this page is still a WIP."
             }
           ]
