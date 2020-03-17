@@ -35,7 +35,7 @@ module.exports = {
                     value: "Flips a coin!"
                 },
                 {
-                    name: "m!esus [@user]",
+                    name: "m!jesus [@user]",
                     value: "Do you or someone else in your life need Jesus?"
                 },
                 {

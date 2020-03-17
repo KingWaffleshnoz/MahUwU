@@ -1,5 +1,5 @@
 module.exports = {
-    name: "esus",
+    name: "jesus",
     permission: 1,
     main: function(bot, msg) {
         var congregation = msg.mentions.users.array()[0];
