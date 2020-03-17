@@ -2,7 +2,7 @@
 ## A Javascript Discord Bot
 
 ### General:
-MahUwU is a general utility bot made by Jared Lyon (jareb #0813) that primarily uses text triggers to perform rudimentary tasks.
+MahUwU is a general utility bot made by Jared Lyon (jareb #1338) that primarily uses text triggers to perform rudimentary tasks.
 
 ### Setup:
 You'll need to copy `config-example.json` then rename it to just `config.json` and input all the required values. You'll also need to create the `score.json` storage file and fill it with just `{}`. This bot currently only needs the `discord.js` npm modules in order to run.
@@ -12,6 +12,7 @@ You'll need to copy `config-example.json` then rename it to just `config.json` a
 - Cleaned up code
 - Fixed minor bugs
 - Added several chat functions
+- Updated README
 
 ### Past Updates:
 **1.3.4**
