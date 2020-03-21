@@ -9,10 +9,10 @@ module.exports = {
       }
       score.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
   
-      var lb = new Discord.RichEmbed()
+      var lb = new Discord.MessageEmbed()
         .setColor(msg.guild.me.displayHexColor)
         .setTitle('The uwu Board!!')
-        .setFooter(msg.guild.name, msg.guild.iconURL);
+        .setFooter(msg.guild.name, msg.guild.iconURL());
   
       for (var i = 0; i < 12; i++) {
       var mem = bot.users.get(score[i].userID)
@@ -20,7 +20,7 @@ module.exports = {
         if (mem == null) {
           mem = 'User Left Server'
         } else {
-          mem = bot.users.get(score[i].userID).username
+          mem = bot.users.cache.get(score[i].userID).username
         }
   
         lb.addField(`${i + 1}: ${mem}`, score[i].score, true);
