@@ -48,11 +48,13 @@ exports.run = (bot, msg) => {
 		var roll = Math.floor((Math.random() * 20));
 		bot.score[msg.author.id].score += roll;
 		bot.score[msg.author.id].lastMessage = new Date();
+		console.log("User score logged!");
 	} else {
 		if (new Date() - new Date(bot.score[msg.author.id].lastMessage) >= 60000 && msg.channel.id != '479903283390185477') {
 			var roll = Math.floor((Math.random() * 20));
 			bot.score[msg.author.id].score += roll;
 			bot.score[msg.author.id].lastMessage = new Date();
+			console.log("User score logged!");
 		}
 	}
 }
