@@ -15,7 +15,7 @@ module.exports = {
       .setFooter(msg.guild.name, msg.guild.iconURL());
 
     for (var i = 0; i < 12; i++) {
-    var mem = bot.users.get(score[i].userID)
+    var mem = bot.users.cache.get(score[i].userID)
 
       if (mem == null) {
         mem = 'User Left Server'

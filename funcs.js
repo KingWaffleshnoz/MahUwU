@@ -82,7 +82,7 @@ module.exports = (bot) => {
 	bot.setupScore = function () {
 		bot.score = require('./score.json');
 
-		bot.users.forEach(user => {
+		bot.users.cache.forEach(user => {
 			if (!bot.score[user.id] && !user.bot) {
 				bot.score[user.id] = {
 					score: 0,
