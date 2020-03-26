@@ -8,13 +8,17 @@ MahUwU is a general utility bot made by Jared Lyon (jareb #1338) that primarily 
 You'll need to copy `config-example.json` then rename it to just `config.json` and input all the required values. You'll also need to create the `score.json` storage file and fill it with just `{}`. This bot currently only needs the `discord.js` npm modules in order to run.
 
 ### Last Update:
+**2.0.0**
+- Migrated MahUwU to Discord.js v12
+- Added m!score command
+
+### Past Updates:
 **1.4.0**
 - Cleaned up code
 - Fixed minor bugs
 - Added several chat functions
 - Updated README
 
-### Past Updates:
 **1.3.4**
 - Added ban command
 - Fixed permissions issue
