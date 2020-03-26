@@ -21,7 +21,7 @@ module.exports = {
             },
             {
               name: "Last Update: v2.0.0",
-              value: "-Migrated MahUwU to Discord.js v12"
+              value: "-Migrated MahUwU to Discord.js v12\n-Added m!score command"
             },
             {
               name: "GitHub: v2.0.0",
