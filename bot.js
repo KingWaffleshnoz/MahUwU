@@ -85,7 +85,7 @@ bot.login(require("./config.json").token);
 
 var restart;
 bot.on('ready', () => {
-    restart = bot.channels.find('id', '465742371670327296'); // Channel to send notification
+    restart = bot.channels.cache.get('id', '465742371670327296'); // Channel to send notification
 });
 
 const TARGET_HOUR_R = 2; 

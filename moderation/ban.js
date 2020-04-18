@@ -3,28 +3,28 @@ var Discord = require('discord.js');
 module.exports = {
     name: 'ban',
     permission: 2,
-    main: function(bot, msg) {
-        var channel = msg.guild.channels.get("479916795671609345");
-        var log = msg.guild.channels.get("479856759700193280");
+    main: function (bot, msg) {
+        var channel = msg.guild.channels.cache.get("479916795671609345");
+        var log = msg.guild.channels.cache.get("479856759700193280");
         var banee = msg.mentions.users.array()[0];
-        var user = bot.users.get(banee.id);
         var reason = msg.content.split(' ').splice(1).join(' ');
         if (reason === '') {
             reason = 'No reason was specified.'
         };
-        var ban = new Discord.RichEmbed()
-            .setAuthor(user.username, user.avatarURL)
-            .addField('Member banned:', `**:hammer: ${user.username}#${user.discriminator} (${user.id}) was banned from the server.**`)
-            .addField('Reason:', reason)
-            .setFooter(bot.user.username, bot.user.avatarURL)
-            .setTimestamp()
-            .setColor(3447003);
 
-        if (msg.mentions.members) {
+        if (banee != null) {
+            var ban = new Discord.MessageEmbed()
+                .setAuthor(banee.username, banee.avatarURL())
+                .addField('Member banned:', `**:hammer: ${banee.username}#${banee.discriminator} (${banee.id}) was banned from the server.**`)
+                .addField('Reason:', reason)
+                .setFooter(bot.user.username, bot.user.avatarURL())
+                .setTimestamp()
+                .setColor(3447003);
+
             msg.mentions.members.forEach(member => {
                 member.ban(0).then(member => {
-                    msg.reply(member + " has been banned!")
-                    
+                    msg.reply("user has been banned!")
+
                     channel.send({
                         embed: ban
                     })

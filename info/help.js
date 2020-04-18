@@ -19,9 +19,13 @@ module.exports = {
                     value: "Self-explainable - but here it is!"
                 },
                 {
+                    name: "j!score [@user]",
+                    value: "Check your score or someone else's!"
+                },
+                {
                     name: "j!leaderboard/j!lb",
                     value: "Lists the top ten message senders!"
-                  },
+                },
                 {
                     name: "m!hug",
                     value: "Hug yourself or someone else!"

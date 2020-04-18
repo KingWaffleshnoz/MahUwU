@@ -6,7 +6,7 @@ module.exports = {
 		const util = require('util');
 
 		var code = msg.content;
-		var embed = new Discord.RichEmbed();
+		var embed = new Discord.MessageEmbed();
 		try {
 			let evaled = eval(code);
 			let type = typeof evaled;
