@@ -20,8 +20,8 @@ module.exports = {
               value: "MahUwU is a general utility bot made by Jared Lyon (jareb #1338) that primarily uses text triggers to perform rudimentary tasks.\nYou can join his server here: https://discord.gg/q2fCsNr"
             },
             {
-              name: "Last Update: v2.0.0",
-              value: "-Migrated MahUwU to Discord.js v12\n-Added m!score command"
+              name: "Last Update: v2.0.1",
+              value: "-Minor patches"
             },
             {
               name: "GitHub: v2.0.0",
