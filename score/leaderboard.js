@@ -1,5 +1,6 @@
 module.exports = {
   name: 'leaderboard',
+  aliases: ['lb'],
   permission: 1,
   main: function (bot, msg) {
     var Discord = require('discord.js'), score = [];

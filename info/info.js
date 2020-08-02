@@ -21,7 +21,8 @@ module.exports = {
             },
             {
               name: "Last Update: v2.0.1",
-              value: "-Minor patches"
+              value: `- Minor patches
+                      - Added aliases`
             },
             {
               name: "GitHub: v2.0.0",
