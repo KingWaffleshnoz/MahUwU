@@ -1,4 +1,4 @@
-# This project was deprecated on January 20th, 2020.
+# This project was deprecated on January 20th, 2021.
 
 # MahUwU
 ## A Javascript Discord Bot
