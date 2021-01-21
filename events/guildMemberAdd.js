@@ -12,7 +12,7 @@ exports.run = (bot, member) => {
 
         channel.send({
             embed: join
-        })
+        });
     } else if (member.guild.id == '479856759184424990') {
         var channel = member.guild.channels.cache.get("479916795671609345");
         var join = new Discord.MessageEmbed()
@@ -24,7 +24,7 @@ exports.run = (bot, member) => {
 
         channel.send({
             embed: join
-        })
+        });
     } else {
         return;
     }

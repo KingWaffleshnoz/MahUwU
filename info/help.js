@@ -15,10 +15,6 @@ module.exports = {
                     value: "Embeds general bot information into the chat."
                 },
                 {
-                    name: "m!help",
-                    value: "Self-explainable - but here it is!"
-                },
-                {
                     name: "j!score [@user]",
                     value: "Check your score or someone else's!"
                 },
